@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <title>Your Name - Portfolio</title>
+</head>
+<body>
+    <header>
+        <!--NAVIGATIONAL PART-->
+        <nav>
+            <div class="logo">Enriquez</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!--END OF NAVIGATIONAL PART-->
+    </header>
+
+        <!--INTRODUCTION PART-->
+    <section id="home">
+        <div class="pos_cen">
+            <img src="image/Lex.jpeg" class="img_deg" alt="Your Image">
+                <h2 class="name">I'm LEX ENRIQUEZ</h2>
+                <p1 class="paragraph">Currently a 3rd Year BSIT student in cvsu Bacoor,<br>I have experience using HTML, CSS, Java, and PHP. 
+                    <br>I also dabble in django framework</p1>
+                    <br>
+                <button type="Submit" class="hire_btn" placeholder="Hire me">Hire me</button>
+                <!-- Add more text content as needed -->
+                <!-- Replace 'your-image.jpg' with the actual path to your image -->
+        </div>
+    </section>
+        <!--END OF INTRODUCTION PART-->
+
+        <!--ABOUT PART-->
+    <section id="about">
+        <div class="head">
+            <h2>About Me</h2>
+            </div>
+        <div class="card_container">
+            <div class="card">
+                <img src="image/Pinfo.png">
+                <div class="card_content">
+                    <h3>Personal Information</h3>
+                    <p><b>Full Name:</b> Lex Emmanuel R. Enriquez<br><b>Age:</b> 22<br><b>Gender:</b> Male<br><b>Address:</b> 
+                        Las Pinas City<br><b>Occupation:</b> Student</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="image/Prog.png">
+                <div class="card_content">
+                    <h3>Code Knowledge</h3>
+                    <p><b>Language learned:</b> <br>HTML ,CSS ,JAVASCRIPT ,PHP ,JAVA ,PHP <br><b>Used:</b> VS CODE, DJANGO, ECLIPSE, </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="image/CVsu.jpeg">
+                <div class="card_content">
+                    <h3>Background</h3>
+                    <p><b>Senior High: </b>ABE LAS PINAS CAMPUS 2018-2019</p>
+                    <p><b>Current(college): </b>Cavite State University Bacoor Campus</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END OF ABOUT PART-->
+
+    <!--PROJECT PART-->
+    <section id="projects">
+        <div class="head">
+            <h2>Projects Involved</h2>
+        </div>
+        <div class="card_containerP">
+            <div class="cardP" id="card1">
+                <img src="image/condo.png">
+                <div class="card_contentP">
+                    <h3>Reservation PHP</h3>
+                    <p><b>Description: </b>A Reservation website that has a database and admin site</p>  
+                    <p><b>Contribution: </b>All-around Developer</p>  
+                </div>
+                <button class="toggle-button" onclick="showContent('card1')">Show Details</button>
+            </div>
+            <div class="cardP" id="card2">
+                <img src="image/django.png">
+                <div class="card_contentP">
+                    <h3>Django Reservation</h3>
+                    <p><b>Description: </b>A working website that uses django and has a built-in CRUD functions</p>  
+                    <p><b>Contribution: </b>All-around Developer</p>          
+                </div>
+                <button class="toggle-button" onclick="showContent('card2')">Show Details</button>
+            </div>
+            <div class="cardP" id="card3">
+                <img src="image/Bleecoffee.png">
+                <div class="card_contentP">
+                    <h3>BLEE COFFEE</h3>
+                    <p><b>Description: </b>An E-commerce website that is made using HTML, CSS, JAVASCRIPT, PHP</p>
+                    <p><b>Contribution: </b>Back-end Developer</p>
+                </div>
+                <button class="toggle-button" onclick="showContent('card3')">Show Details</button>
+            </div>
+        </div>
+    </section>
+    <!--END OF PROJECT PART-->
+
+    <!--CONTACT PART-->
+    <section id="contact">
+        <div class="content">
+            <h2>Contact Me:</h2>
+        </div>
+        <div class="inside">
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="text">
+                        <h3>Email:</h3> 
+                        <p>Lexenriquez.e@gmail.com</p>   
+                </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>    
+                            <div class="text">
+                            <h3>Phone:</h3> 
+                            <p>09151711197</p>   
+                    </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa-solid fa-map"></i>
+                        </div>        
+                                <div class="text">
+                                <h3>Address:</h3> 
+                                <p>Las Pinas City</p>   
+                        </div>
+                        </div>
+            </div>
+            <div class="contactForm">
+                <form action="">
+                    <h2>Send Message:</h2>
+                    <div class="inputbox">
+                        <input type="text">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="email">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputbox">
+                        <textarea name="" id="" cols="10" rows="3"></textarea>    
+                    <span>Type Your Message...</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="submit" class="event_button" value="send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!--END OF CONTACT PART-->
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
